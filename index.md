@@ -1,5 +1,5 @@
 #MY CHECKLIST#
-* watch
+* text
 * **bold**
 * _italicize_
 * [Link](https://google.com)
