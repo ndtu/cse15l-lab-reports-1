@@ -25,7 +25,7 @@ ls -a
 ls<directory>
 ```
 
-* Some commands might give you an error like the one shown below, but this is expected and is okay:
+* Some commands might give you an error but this is okay (it can be an access problem). You can run some of the above commands like in the below:
 
 ![Image](pic3.png)
 
@@ -44,30 +44,16 @@ ls<directory>
 * `ssh-keygen` keys can help prevent us from having to login every time we want to edit a file. This creates a pair of public and private keys.
 
 * After entering the keys the artwork might look something like the thing below:
-```
-+---[RSA 3072]----+
-|                 |
-|       . . + .   |
-|      . . B o .  |
-|     . . B * +.. |
-|      o S = *.B. |
-|       = = O.*.*+|
-|        + * *.BE+|
-|           +.+.o |
-|             ..  |
-+----[SHA256]-----+
-```
+![Image](pic5.png)
 <br>
 
-* This creats two new files, the private key (in a file id_rsa) and the public key (in a file id_rsa.pub). We need to copy the public key to the .ssh directory of your user account on the server in order to access it without typing your password every time. Follow the commands shown below to do this:
-
-![Image](pic5.png)
+* This creats two new files, the private key (in a file id_rsa) and the public key (in a file id_rsa.pub). We copy the public key to the .ssh directory of your user account on the server in order to access it without typing your password every time.
 
 ## Optimizing Remote Running
 
 * You can try to use what we have learned so far by making local edits to a file by copying it to the remote server and then running it.
 
-* Below are some of the hints that were mentioned in this lab:
+* Below is one example of code you can use:<br>
 
 ![Image](pic6.png)
 
