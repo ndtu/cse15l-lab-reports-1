@@ -5,7 +5,7 @@
 3. [Link](https://google.com)
 
 ## My Other Checklist
-![Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fucsdnews.ucsd.edu%2Fpressrelease%2Fuc-san-diego-ranked-no-1-public-university-by-washington-monthly&psig=AOvVaw2-gCtZP7GT0uIwczBmBXDP&ust=1642123994193000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDovd3KrfUCFQAAAAAdAAAAABAD)
+![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)
 > This is UCSD
 ***
 `Other Random Stuff`
