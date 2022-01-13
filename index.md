@@ -2,5 +2,5 @@
 * watch
 * **bold**
 * _italicize_
-* [Link] (https://google.com)
+* [Link](https://google.com)
 
