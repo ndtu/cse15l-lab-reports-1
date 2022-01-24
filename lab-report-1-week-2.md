@@ -51,9 +51,13 @@ ls<directory>
 
 ## Optimizing Remote Running
 
-* You can try to use what we have learned so far by making local edits to a file by copying it to the remote server and then running it.
+* You can try to use what we have learned so far by making local edits to a file by copying it to the remote server and then running it. You can also make your command running more efficient by chaining commands together.
 
 * Below is one example of code you can use:<br>
 
 ![Image](pic6.png)
+
+* Another example of a command you can write is the one below:
+
+`ssh cs15lwi22ans@ieng6.ucsd.edu "ls" javac WhereAmI.java; java WhereAmI`
 
