@@ -57,7 +57,6 @@ ls<directory>
 
 ![Image](pic6.png)
 
-* Another example of a command you can write is the one below:
-
-`ssh cs15lwi22ans@ieng6.ucsd.edu "ls" javac WhereAmI.java; java WhereAmI`
+* Another example of a command you can write is the one below is 
+`cp javac WhereAmI.java NewMain java; javac NewMain.java; java WhereAmI`. This saves keystrokes as we can write this in one line instead of writing `cp WhereAmI.java NewMain java`, `javac NewMain.java` `java WhereAmI` in three lines. When also wanting to run this code again, this saves 7 keys as you only need to click the up arrow key and enter key each instead of 6 and 3 times respectively for the second three-line option.
 
