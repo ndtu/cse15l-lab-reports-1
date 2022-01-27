@@ -12,12 +12,14 @@ The original file can be seen in this [link](MarkdownParse.java). Although this 
 [another link!](some-page.html)
 ```
 
-it seems to break when there are other characters in the file. For example, a .md file with the other following contents:
+it seems to break when there are other characters in the file. For example, a .md file with the other following contents which can be found in this [file](https://raw.githubusercontent.com/ucsd-cse15l-w22/markdown-parse/main/test-file2.md):
 ```
 # Title
 
-[a link!](some-page.html)!
 [a link!](https://something.com)
+[another link!](some-page.html)
+
+some paragraph text after the links
 ```
 
 will trigger errors and an infinite loop to the java code linked above as shown below:
@@ -47,15 +49,12 @@ The original file can be seen in this [link](MarkdownParseChange.java). Although
 [another link!](some-page.html)abc
 ```
 
-it seems to break when there are image links to the file. For example, a .md file with the other following contents:
+it seems to break when there are image links to the file. For example, a .md file with the other following contents seen in this [file](https://raw.githubusercontent.com/ucsd-cse15l-w22/markdown-parse/main/test-file6.md):
 
 ```
-# Title
+# title 
 
-[a link!](some-page.html)!
-Hi
-![Image](https://chiefrivernursery.com/media/catalog/product/cache/9820170e8aaf17063e79ec8448f2da6f/g/a/gala-apple-fruit_1.jpg)
-[a link!](https://something.com)
+![link](page.com)
 ```
 
 will trigger errors and an infinite loop to the java code linked above as shown below:
@@ -73,3 +72,29 @@ In summary:
 <br>
 
 ## Example 3 Code Changes
+
+![Image](pic2-5.png)
+
+The original file can be seen in this [link](MarkdownParseFinal.java). Although this code seems to work for a tester file such as one with the contents of below:
+
+```
+[a link!](google.com)!
+[another link!](some-page.html)793
+hugs ![Image](https://chiefrivernursery.com/media/catalog/product/cache/9820170e8aaf17063e79ec8448f2da6f/g/a/gala-apple-fruit_1.jpg)
+```
+
+it seems to break when there are other characters in the file. For example, a .md file with the other following contents which can be found in this [file](https://raw.githubusercontent.com/tylereriksen/markdown-parse/main/test-3.md)
+```
+[](a link on the first line)
+```
+
+will trigger errors and an infinite loop to the java code linked above as shown below:
+
+![Image](pic2-6.png)
+
+This problem is triggered by line 13 since the original `nextOpenBracket` had index value of 0 so when the if statement compared the previous character, which would make it of value index -1, it was not able to do so since it was out of bounds. Even if we fixed this, the issue was that even though the characters inside the open and close parenthesis was not a link, it was inputted into the return output, triggered by line 20. We want to fix this by fixing the `if` statement that accounts for case `nextOpenBracket` equal to 0 and considers when a text inside the parethesis is not a link.
+
+In summary:
+* the **bug** was line 13 and 20 which didn't consider the fact when `nextOpenBracket` = 0 and when text in parethsis was not a link
+* the **symptom** was an `StringIndexOutOfBoundsException` and an unwanted string being inputted into the output
+* the **failure-inducing input** was any file that had a opening bracket in the beginning and had non-link text with spaces
