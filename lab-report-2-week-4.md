@@ -83,7 +83,7 @@ The original file can be seen in this [link](MarkdownParseFinal.java). Although 
 hugs ![Image](https://chiefrivernursery.com/media/catalog/product/cache/9820170e8aaf17063e79ec8448f2da6f/g/a/gala-apple-fruit_1.jpg)
 ```
 
-it seems to break when there are other characters in the file. For example, a .md file with the other following contents which can be found in this [file](https://tylereriksen.github.io/cse15l-lab-reports/index3.html)
+it seems to break when there are other characters in the file. For example, a .md file with the other following contents which can be found in this [file](https://raw.githubusercontent.com/tylereriksen/cse15l-lab-reports/main/index3.md) (Note: we will ignore the last character of that file for the demonstration purposes of this lab report)
 ```
 [](a link on the first line)
 ```
