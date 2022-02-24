@@ -145,27 +145,27 @@ And there's still some more text after that.
 And then there's more text
 
 ### *Code for Test*
-![Image](pic4-8.png)
+![Image](pic4-14.png)
 
 Expected:
-```["https://www.twitter.com", "https://ucsd-cse15l-w22.github.io/", "https://cse.ucsd.edu/"]```
+```["https://ucsd-cse15l-w22.github.io/"]```
 
 
 ### *Test Results*
 My Test Result:
-![Image](pic4-9.png)
+![Image](pic4-11.png)
 
 
 <br>
 
 Review Code Test Result:
-![Image](pic4-7.png)
+![Image](pic4-13.png)
 <br>
 
 ## FIXES QUESTIONS
 1. This could possibly take more than 10 lines of code due to it not considering any possible backticks in the code that can disrupt with the link finding in a markdown file. I will have to add several conditions on when a backtick will interfere with a link or not which could end up easily being more than 10 lines of code except that there are only really a few cases to consider: when the backticks are both inside the brackets, when it is not, and when it is around the parethesis. It would depend on how it is coded.
 
-2. This could probably be done in less than 10 lines as the code already attempts to take into account nested brakcets and parenthesis. I can make it work by keeping track of the last parenthesis before the next bracket and making sure that the number of brackets and parenthsis for both open and closed types are the same for nested ones and making sure that escapted brackets are not interfering with the links with an `if` statement.
+2. This could probably be done in less than 10 lines as the code already attempts to take into account nested brackets and parenthesis. I can make it work by keeping track of the last parenthesis before the next bracket and making sure that the number of brackets and parenthsis for both open and closed types are the same for nested ones and making sure that escapted brackets are not interfering with the links with an `if` statement.
 
 3. This would probably will take more than 10 lines of code as there is nothing in the code considering having line breaks within brackets and hwo to deal with them. This might need a multitude of `if` and `else` statements, of similar magnitude of the original dealing with `[`, `]`, `(`, and `)` since we will have to think of the cases of having multiple line breaks together as part of the link and the link name.
 
