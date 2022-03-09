@@ -5,6 +5,7 @@
 2. [Week 4 Lab Report 2](https://tylereriksen.github.io/cse15l-lab-reports/lab-report-2-week-4.html)
 3. [Week 6 Lab Report 3](https://tylereriksen.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
 4. [Week 8 Lab Report 4](https://tylereriksen.github.io/cse15l-lab-reports/lab-report-4-week-8.html)
+4. [Week 10 Lab Report 5](https://tylereriksen.github.io/cse15l-lab-reports/lab-report-5-week-10.html)
 
 ## Images Used
 1. ![Image](pic1.png)
